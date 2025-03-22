@@ -1,0 +1,86 @@
+* {
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#turn {
+    margin: 0;
+    width: 35%;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    background-color: #808080;
+    border: 2px solid #808080;
+    cursor: pointer;
+}
+
+#reset {
+    width: 20%;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    background-color: #0000FF;
+    border: 2px solid #0000FF;
+    cursor: pointer;
+}
+
+.main {
+    border: 3px solid rgba(0, 0, 0, 0.737);
+    width: 35%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FFD700;
+}
+
+.main div {
+    width: 100%;
+    height: 100%;
+}
+
+.main div:hover {
+    background-color: rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+}
+
+.one,
+.two,
+.four,
+.five {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.three {
+    border-bottom: 2px solid;
+}
+
+.six {
+    border-bottom: 2px solid;
+}
+
+.seven {
+    border-right: 2px solid;
+}
+
+.eight {
+    border-right: 2px solid;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 80%;
+    }
+}
